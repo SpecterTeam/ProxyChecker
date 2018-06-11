@@ -40,7 +40,7 @@ class ProxyCheckerTask extends AsyncTask
      */
     public function onRun()
     {
-        $result = json_decode(file_get_contents("http://checkproxy.ga/api/proxychecker/index.php?ip=" . $this->getIp() . "&key=" . $this->getKey()));
+        $result = json_decode(file_get_contents("https://proxychecker-web.herokuapp.com/?ip=" . $this->getIp() . "&key=" . $this->getKey()));
         $this->setResult($result);
     }
 
