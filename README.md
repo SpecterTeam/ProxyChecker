@@ -1,7 +1,9 @@
 # ProxyChecker
- A pocketmine plugin made in PHP to not let players with proxies to join your server.
-## CREDITS:
- This plugin uses a public api made by [@OGFris](https://twitter.com/OGFris), contact him on twitter to purchase a premium license key.
+ A php pocketmine plugin that allows server-owners to block players from joining their servers.
+### Developer
+- [@OGFris](https://twitter.com/OGFris) 
+## Premium key:
+ This plugin uses a public api made by [@OGFris](https://twitter.com/OGFris), contact him on twitter to purchase a premium license key, or email him at purchase@fris.xyz.
 ## License
  ProxyChecker is under the [GNU General Public License v3.0](https://github.com/SpecterTeam/ProxyChecker/blob/master/LICENSE).
  
