@@ -95,6 +95,6 @@ class ProxyChecker extends PluginBase implements Listener
         $player = $event->getPlayer();
         $ip = $player->getAddress();
         $name = $player->getName();
-        $this->getServer()->getScheduler()->scheduleAsyncTask(new ProxyCheckerTask($ip, $name, self::getConfigData()->get("key")));
+        Server::getInstance()->getAsyncPool()->submitTask(new ProxyCheckerTask($ip, $name, self::getConfigData()->get("key")));
     }
 }
