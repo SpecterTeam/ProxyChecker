@@ -25,6 +25,7 @@ use pocketmine\event\player\PlayerPreLoginEvent;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\Config;
 use pocketmine\utils\TextFormat;
+use pocketmine\Server;
 
 class ProxyChecker extends PluginBase implements Listener
 {
@@ -95,6 +96,6 @@ class ProxyChecker extends PluginBase implements Listener
         $player = $event->getPlayer();
         $ip = $player->getAddress();
         $name = $player->getName();
-        $this->getServer()->getScheduler()->scheduleAsyncTask(new ProxyCheckerTask($ip, $name, self::getConfigData()->get("key")));
+        Server::getInstance()->getAsyncPool()->submitTask(new ProxyCheckerTask($ip, $name, self::getConfigData()->get("key")));
     }
 }
