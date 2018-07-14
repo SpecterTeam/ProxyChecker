@@ -40,7 +40,13 @@ class ProxyCheckerTask extends AsyncTask
      */
     public function onRun()
     {
-        $result = json_decode(file_get_contents("https://proxychecker-web.herokuapp.com/?ip=" . $this->getIp() . "&key=" . $this->getKey()));
+	$arrContextOptions= array(
+        "ssl"=>array(
+        "verify_peer"=>false,
+        "verify_peer_name"=>false,
+        ),
+    );  
+        $result = json_decode(file_get_contents("https://proxychecker-web.herokuapp.com/?ip=" . $this->getIp() . "&key=" . $this->getKey(), False, stream_context_create($arrContextOptions)), true);
         $this->setResult($result);
     }
 
