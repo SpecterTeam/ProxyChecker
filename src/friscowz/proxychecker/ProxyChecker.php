@@ -25,6 +25,7 @@ use pocketmine\event\player\PlayerPreLoginEvent;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\Config;
 use pocketmine\utils\TextFormat;
+use pocketmine\Server;
 
 class ProxyChecker extends PluginBase implements Listener
 {
