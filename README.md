@@ -3,7 +3,7 @@
 ### Developer
 - [@OGFris](https://twitter.com/OGFris) 
 ## Premium key:
- This plugin uses a public api made by [@OGFris](https://twitter.com/OGFris), contact him on twitter to purchase a premium license key, or email him at purchase@fris.xyz.
+ This plugin uses a public api made by [@OGFris](https://twitter.com/OGFris), contact him on twitter to purchase a premium license key, or email him at ogfris@protonmail.com.
 ## License
  ProxyChecker is under the [GNU General Public License v3.0](https://github.com/SpecterTeam/ProxyChecker/blob/master/LICENSE).
  
